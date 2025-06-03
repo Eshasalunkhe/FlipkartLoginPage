@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Flipkart Login Page</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #f1f3f6;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+    }
+
+    .container-login {
+      display: flex;
+      width: 900px;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+      background-color: #fff;
+      border-radius: 8px;
+      overflow: hidden;
+    }
+
+    .left-side {
+      background-color: #2874f0;
+      color: white;
+      padding: 40px;
+      width: 45%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    .left-side h2 {
+      margin-bottom: 15px;
+      font-size: 28px;
+    }
+
+    .left-side p {
+      font-size: 16px;
+      line-height: 1.5;
+    }
+
+    .left-side img {
+      width: 100%;
+      margin-top: 30px;
+    }
+
+    .right-side {
+      padding: 50px 35px;
+      width: 55%;
+      color: #555;
+    }
+
+    form input {
+      width: 100%;
+      padding: 12px;
+      margin: 12px 0;
+      border: none;
+      border-bottom: 1px solid #ccc;
+      outline: none;
+    }
+
+    .password-field {
+      position: relative;
+    }
+
+    .forgot-inside {
+      position: absolute;
+      right: 0;
+      top: 50%;
+      transform: translateY(-50%);
+      font-size: 13px;
+      text-decoration: none;
+      color: #2874f0;
+    }
+
+    .terms {
+      font-size: 14px;
+      color: #878787;
+      margin: 20px 0;
+    }
+
+    .terms a {
+      color: #2874f0;
+      text-decoration: none;
+    }
+
+    .login-btn {
+      background-color: #fb641b;
+      color: white;
+      border: none;
+      padding: 12px;
+      width: 100%;
+      font-weight: bold;
+      margin-bottom: 15px;
+    }
+
+    .or {
+      text-align: center;
+      margin: 10px 0;
+      color: #878787;
+      font-weight: bold;
+    }
+
+    .otp-btn {
+      background-color: white;
+      color: #2874f0;
+      border: 1px solid #ccc;
+      padding: 12px;
+      width: 100%;
+      font-weight: bold;
+      box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.05);
+    }
+
+    .signup {
+      text-align: center;
+      margin-top: 25px;
+      font-size: 14px;
+    }
+
+    .signup a {
+      color: #2874f0;
+      text-decoration: none;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="container-login">
+    <div class="left-side">
+      <h2>Login</h2>
+      <p>Get access to your<br />Orders, Wishlist and<br />Recommendations</p>
+      <img src="image.png" alt="Flipkart login illustration" />
+    </div>
+    <div class="right-side">
+      <form>
+        <input type="text" placeholder="Enter Email/Mobile number" required />
+
+        <div class="password-field">
+          <input type="password" placeholder="Enter Password" required />
+          <a href="#" class="forgot-inside">Forgot?</a>
+        </div>
+
+        <p class="terms">
+          By continuing, you agree to Flipkart's
+          <a href="#">Terms of Use</a> and
+          <a href="#">Privacy Policy</a>.
+        </p>
+
+        <button type="submit" class="login-btn">Login</button>
+        <div class="or">OR</div>
+        <button type="button" class="otp-btn">Request OTP</button>
+
+        <p class="signup">
+          <a href="#"> New to Flipkart? Create an account</a>
+        </p>
+      </form>
+    </div>
+  </div>
+
+</body>
+
+</html>
